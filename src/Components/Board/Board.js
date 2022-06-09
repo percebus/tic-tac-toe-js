@@ -3,10 +3,6 @@ import Square from '../Square/Square';
 
 
 class Board extends React.Component {
-  renderSquare(i) {
-    return <Square />;
-  }
-
   render() {
     const status = 'Next player: X';
     return (
@@ -14,19 +10,19 @@ class Board extends React.Component {
         <div className="status">{status}</div>
 
         <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
+          {Square.render_i(0)}
+          {Square.render_i(1)}
+          {Square.render_i(2)}
         </div>
         <div className="board-row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
+          {Square.render_i(3)}
+          {Square.render_i(4)}
+          {Square.render_i(5)}
         </div>
         <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
+          {Square.render_i(6)}
+          {Square.render_i(7)}
+          {Square.render_i(8)}
         </div>
       </div>
     );
