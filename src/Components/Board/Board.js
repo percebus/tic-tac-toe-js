@@ -1,5 +1,8 @@
-import _ from 'lodash'
 import React from 'react';
+
+import _ from 'lodash';
+// import {Clone} from 'react-lodash' // TODO? or XXX?
+
 import Square from '../Square/Square';
 
 
@@ -12,6 +15,10 @@ class Board extends React.Component {
     };
   }
 
+  whoIsNext() {
+      return this.state.isX ? 'O' : 'X';
+  }
+
   onClick(i) {
     const state = this.state;
     if (state.squares[i]) {
@@ -20,7 +27,7 @@ class Board extends React.Component {
     }
 
     const squares = _.clone(state.squares);
-    squares[i] = state.isX ? '0' : 'X';
+    squares[i] = this.whoIsNext();
     this.setState({
       isX: !state.isX,
       squares: squares
@@ -37,25 +44,28 @@ class Board extends React.Component {
   }
 
   render() {
-    const status = 'Next player: X';
     return (
       <div>
-        <div className="status">{status}</div>
+        <div className="status">
+          Next player: {this.whoIsNext()}
+        </div>
 
-        <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
+        <div>
+          <div className="board-row">
+            {this.renderSquare(0)}
+            {this.renderSquare(1)}
+            {this.renderSquare(2)}
+          </div>
+          <div className="board-row">
+            {this.renderSquare(3)}
+            {this.renderSquare(4)}
+            {this.renderSquare(5)}
+          </div>
+          <div className="board-row">
+            {this.renderSquare(6)}
+            {this.renderSquare(7)}
+            {this.renderSquare(8)}
+          </div>
         </div>
       </div>
     );
