@@ -13,10 +13,27 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "npm:install:global": "npm install -g yarn standard serve",
+    "setup": "npm run npm:install:global",
+    "standard": "standard --fix src/**/*.js*",
+    "lint:js": "npm run standard",
+    "lint": "npm run lint:js",
+    "react:test": "react-scripts test",
+    "react:start": "react-scripts start",
+    "react:build": "react-scripts build",
+    "react:eject": "react-scripts eject",
+    "prestart": "npm run lint",
+    "start": "npm run react:start",
+    "prebuild": "npm run lint",
+    "build": "npm run react:build",
+    "serve:build": "serve -s build",
+    "test": "npm run react:test",
+    "eject": "npm run react:eject"
+  },
+  "standard": {
+    "global": [
+      "alert"
+    ]
   },
   "eslintConfig": {
     "extends": [
