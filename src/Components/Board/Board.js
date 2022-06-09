@@ -7,14 +7,24 @@ class Board extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      isX: false,
       squares: Array(9).fill(null)
     };
   }
 
   onClick(i) {
-    const squares = _.clone(this.state.squares);
-    squares[i] = 'X';
-    this.setState({squares: squares});
+    const state = this.state;
+    if (state.squares[i]) {
+      alert('Space taken!, choose another one')
+      return
+    }
+
+    const squares = _.clone(state.squares);
+    squares[i] = state.isX ? '0' : 'X';
+    this.setState({
+      isX: !state.isX,
+      squares: squares
+    });
   }
 
   renderSquare(i) {
