@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
+    "lodash": "^4.17.21",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-lodash": "^0.1.2",
@@ -15,6 +13,10 @@
   "scripts": {
     "npm:install:global": "npm install -g yarn standard serve",
     "setup": "npm run npm:install:global",
+    "yarn:licenses:list:prod": "yarn licenses list --prod > LICENSES.txt",
+    "yarn:licenses:generate-disclaimer:prod": "yarn licenses generate-disclaimer --prod > LICENSES.md",
+    "yarn:licenses:prod": "npm run yarn:licenses:list:prod && npm run yarn:licenses:generate-disclaimer:prod",
+    "LICENSES": "npm run yarn:licenses:prod",
     "standard": "standard --fix src/**/*.js*",
     "lint:js": "npm run standard",
     "lint": "npm run lint:js",
@@ -54,6 +56,8 @@
     ]
   },
   "devDependencies": {
-    "lodash": "^4.17.21"
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.2.0"
   }
 }
