@@ -1,3 +1,4 @@
+import _ from 'lodash'
 import React from 'react';
 import Square from '../Square/Square';
 
@@ -11,11 +12,7 @@ class Board extends React.Component {
   }
 
   onClick(i) {
-    const squares = this
-      .state
-      .squares
-      .slice();
-
+    const squares = _.clone(this.state.squares);
     squares[i] = 'X';
     this.setState({squares: squares});
   }
