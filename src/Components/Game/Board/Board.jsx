@@ -1,16 +1,19 @@
 import React from 'react'
 
 import _ from 'lodash'
-// import {Clone} from 'react-lodash' // TODO? or XXX?
+import { Map } from 'react-lodash'
 
 import Square from './Square/Square'
 
 class Board extends React.Component {
   constructor (props) {
     super(props)
+
+    const axis = 3
     this.state = {
       isX: false,
-      squares: Array(9).fill(null)
+      axis,
+      squares: Array(axis ** 2).fill(null)
     }
   }
 
@@ -42,6 +45,13 @@ class Board extends React.Component {
   }
 
   render () {
+    const rows = _.chain()
+      .range(this.state.squares.length)
+      .chunk(this.state.axis)
+      .value()
+
+    console.debug('rows', rows)
+
     return (
       <div>
         <div className='status'>
@@ -49,21 +59,13 @@ class Board extends React.Component {
         </div>
 
         <div>
-          <div className='board-row'>
-            {this.renderSquare(0)}
-            {this.renderSquare(1)}
-            {this.renderSquare(2)}
-          </div>
-          <div className='board-row'>
-            {this.renderSquare(3)}
-            {this.renderSquare(4)}
-            {this.renderSquare(5)}
-          </div>
-          <div className='board-row'>
-            {this.renderSquare(6)}
-            {this.renderSquare(7)}
-            {this.renderSquare(8)}
-          </div>
+          <Map
+            collection={rows}
+            iteratee={columns =>
+              <div className='board-row'>
+                <Map collection={columns} iteratee={idx => this.renderSquare(idx)} />
+              </div>}
+          />
         </div>
       </div>
     )
