@@ -3,7 +3,7 @@ import React from 'react'
 import _ from 'lodash'
 // import {Clone} from 'react-lodash' // TODO? or XXX?
 
-import Square from '../Square/Square'
+import Square from './Square/Square'
 
 class Board extends React.Component {
   constructor (props) {
