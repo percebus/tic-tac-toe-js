@@ -1,20 +1,27 @@
 import React from 'react'
-
 import _ from 'lodash'
 import { Map } from 'react-lodash'
-
 import Square from './Square/Square'
+import './board.css'
+
+let storage = null
+try { // TODO encapsulate in another module
+  /* global chrome */
+  storage = _.get(chrome, 'storage.sync', null)
+} catch (oError) {
+  console.warn(oError)
+}
 
 class Board extends React.Component {
-  constructor (props) {
-    super(props)
+  getAxis () {
+    let _axis = 3
 
-    const axis = 3
-    this.state = {
-      isX: false,
-      axis,
-      squares: Array(axis ** 2).fill(null)
-    }
+    if (!storage) { return _axis }
+    storage.get('axis', ({ axis }) => {
+      _axis = axis
+    })
+
+    return _axis
   }
 
   whoIsNext () {
@@ -33,6 +40,17 @@ class Board extends React.Component {
       isX: !this.state.isX,
       squares
     })
+  }
+
+  constructor (props) {
+    super(props)
+
+    const axis = this.getAxis()
+    this.state = {
+      isX: false,
+      axis,
+      squares: Array(axis ** 2).fill(null)
+    }
   }
 
   renderSquare (i) {

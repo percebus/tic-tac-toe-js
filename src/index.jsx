@@ -1,10 +1,12 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-
+import ReactDOM from 'react-dom'
 import './index.css'
-import Game from './Components/Game/Game'
+import App from './App'
 
-// ========================================
-
-const oRoot = ReactDOM.createRoot(document.getElementById('root'))
-oRoot.render(<Game />)
+const divHTMLElement = document.getElementById('root')
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  divHTMLElement
+)

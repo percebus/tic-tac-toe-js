@@ -133,9 +133,9 @@ yarn licenses v1.22.19
 │     ├─ VendorName: Domenic Denicola
 │     └─ VendorUrl: https://domenic.me/
 ├─ BSD-2-Clause
-│  ├─ @typescript-eslint/parser@5.27.1
+│  ├─ @typescript-eslint/parser@5.28.0
 │  │  └─ URL: https://github.com/typescript-eslint/typescript-eslint.git
-│  ├─ @typescript-eslint/typescript-estree@5.27.1
+│  ├─ @typescript-eslint/typescript-estree@5.28.0
 │  │  └─ URL: https://github.com/typescript-eslint/typescript-eslint.git
 │  ├─ browser-process-hrtime@1.0.0
 │  │  ├─ URL: git://github.com/kumavis/browser-process-hrtime.git
@@ -230,7 +230,7 @@ yarn licenses v1.22.19
 │  │  ├─ URL: https://github.com/yeoman/stringify-object.git
 │  │  ├─ VendorName: Sindre Sorhus
 │  │  └─ VendorUrl: sindresorhus.com
-│  ├─ terser@5.14.0
+│  ├─ terser@5.14.1
 │  │  ├─ URL: https://github.com/terser/terser
 │  │  ├─ VendorName: Mihai Bazon
 │  │  └─ VendorUrl: https://terser.org/
@@ -286,6 +286,9 @@ yarn licenses v1.22.19
 │  │  ├─ URL: git://github.com/avoidwork/filesize.js.git
 │  │  ├─ VendorName: Jason Mulligan
 │  │  └─ VendorUrl: https://filesizejs.com/
+│  ├─ hoist-non-react-statics@3.3.2
+│  │  ├─ URL: git://github.com/mridgway/hoist-non-react-statics.git
+│  │  └─ VendorName: Michael Ridgway
 │  ├─ istanbul-lib-coverage@3.2.0
 │  │  ├─ URL: git+ssh://git@github.com/istanbuljs/istanbuljs.git
 │  │  ├─ VendorName: Krishnan Anantheswaran
@@ -400,7 +403,7 @@ yarn licenses v1.22.19
 │  ├─ @csstools/postcss-unset-value@1.0.1
 │  │  ├─ URL: https://github.com/csstools/postcss-plugins.git
 │  │  └─ VendorUrl: https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-unset-value#readme
-│  ├─ @csstools/selector-specificity@2.0.0
+│  ├─ @csstools/selector-specificity@2.0.1
 │  │  ├─ URL: https://github.com/csstools/postcss-plugins.git
 │  │  └─ VendorUrl: https://github.com/csstools/postcss-plugins/tree/main/packages/selector-specificity#readme
 │  ├─ css-blank-pseudo@3.0.3
@@ -435,9 +438,8 @@ yarn licenses v1.22.19
 │  │  ├─ URL: https://github.com/csstools/postcss-plugins.git
 │  │  ├─ VendorName: Jonathan Neal
 │  │  └─ VendorUrl: https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-functional-notation#readme
-│  ├─ postcss-color-rebeccapurple@7.0.2
+│  ├─ postcss-color-rebeccapurple@7.1.0
 │  │  ├─ URL: https://github.com/csstools/postcss-plugins.git
-│  │  ├─ VendorName: Jonathan Neal
 │  │  └─ VendorUrl: https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-rebeccapurple#readme
 │  ├─ postcss-dir-pseudo-class@6.0.4
 │  │  ├─ URL: https://github.com/csstools/postcss-plugins.git
@@ -534,11 +536,14 @@ yarn licenses v1.22.19
 │  │  ├─ URL: git+https://github.com/novemberborn/common-path-prefix.git
 │  │  ├─ VendorName: Mark Wubben
 │  │  └─ VendorUrl: https://github.com/novemberborn/common-path-prefix#readme
+│  ├─ css-color-keywords@1.0.0
+│  │  ├─ URL: https://github.com/sonicdoe/css-color-keywords.git
+│  │  └─ VendorName: Jakob Krigovsky
 │  ├─ css-declaration-sorter@6.3.0
 │  │  ├─ URL: https://github.com/Siilwyn/css-declaration-sorter.git
 │  │  ├─ VendorName: Selwyn
 │  │  └─ VendorUrl: https://selwyn.cc/
-│  ├─ electron-to-chromium@1.4.150
+│  ├─ electron-to-chromium@1.4.154
 │  │  ├─ URL: https://github.com/kilian/electron-to-chromium/
 │  │  └─ VendorName: Kilian Valkhof
 │  ├─ fastq@1.13.0
@@ -715,11 +720,11 @@ yarn licenses v1.22.19
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-code-frame
-│  ├─ @babel/compat-data@7.17.10
+│  ├─ @babel/compat-data@7.18.5
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/team
-│  ├─ @babel/core@7.18.2
+│  ├─ @babel/core@7.18.5
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-core
@@ -829,7 +834,7 @@ yarn licenses v1.22.19
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-highlight
-│  ├─ @babel/parser@7.18.4
+│  ├─ @babel/parser@7.18.5
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-parser
@@ -1032,7 +1037,7 @@ yarn licenses v1.22.19
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-plugin-transform-modules-commonjs
-│  ├─ @babel/plugin-transform-modules-systemjs@7.18.4
+│  ├─ @babel/plugin-transform-modules-systemjs@7.18.5
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-plugin-transform-modules-systemjs
@@ -1044,7 +1049,7 @@ yarn licenses v1.22.19
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-plugin-transform-named-capturing-groups-regex
-│  ├─ @babel/plugin-transform-new-target@7.17.12
+│  ├─ @babel/plugin-transform-new-target@7.18.5
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-plugin-transform-new-target
@@ -1088,7 +1093,7 @@ yarn licenses v1.22.19
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-plugin-transform-reserved-words
-│  ├─ @babel/plugin-transform-runtime@7.18.2
+│  ├─ @babel/plugin-transform-runtime@7.18.5
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-plugin-transform-runtime
@@ -1150,7 +1155,7 @@ yarn licenses v1.22.19
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-template
-│  ├─ @babel/traverse@7.18.2
+│  ├─ @babel/traverse@7.18.5
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-traverse
@@ -1162,6 +1167,14 @@ yarn licenses v1.22.19
 │  │  ├─ URL: git://github.com/demurgos/v8-coverage.git
 │  │  ├─ VendorName: Charles Samborski
 │  │  └─ VendorUrl: https://demurgos.github.io/v8-coverage
+│  ├─ @emotion/is-prop-valid@1.1.3
+│  │  └─ URL: https://github.com/emotion-js/emotion/tree/main/packages/is-prop-valid
+│  ├─ @emotion/memoize@0.7.5
+│  │  └─ URL: https://github.com/emotion-js/emotion/tree/master/packages/memoize
+│  ├─ @emotion/stylis@0.8.5
+│  │  └─ URL: https://github.com/emotion-js/emotion/tree/master/packages/stylis
+│  ├─ @emotion/unitless@0.7.5
+│  │  └─ URL: https://github.com/emotion-js/emotion/tree/master/packages/unitless
 │  ├─ @eslint/eslintrc@1.3.0
 │  │  ├─ URL: https://github.com/eslint/eslintrc.git
 │  │  ├─ VendorName: Nicholas C. Zakas
@@ -1357,7 +1370,7 @@ yarn licenses v1.22.19
 │  ├─ @types/estree@0.0.51
 │  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
 │  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/estree
-│  ├─ @types/express-serve-static-core@4.17.28
+│  ├─ @types/express-serve-static-core@4.17.29
 │  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
 │  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express-serve-static-core
 │  ├─ @types/express@4.17.13
@@ -1387,7 +1400,7 @@ yarn licenses v1.22.19
 │  │  └─ VendorName: Jason Swearingen
 │  ├─ @types/mime@1.3.2
 │  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/node@17.0.41
+│  ├─ @types/node@17.0.42
 │  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
 │  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node
 │  ├─ @types/parse-json@4.0.0
@@ -1435,19 +1448,19 @@ yarn licenses v1.22.19
 │  ├─ @types/yargs@17.0.10
 │  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
 │  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/yargs
-│  ├─ @typescript-eslint/eslint-plugin@5.27.1
+│  ├─ @typescript-eslint/eslint-plugin@5.28.0
 │  │  └─ URL: https://github.com/typescript-eslint/typescript-eslint.git
-│  ├─ @typescript-eslint/experimental-utils@5.27.1
+│  ├─ @typescript-eslint/experimental-utils@5.28.0
 │  │  └─ URL: https://github.com/typescript-eslint/typescript-eslint.git
-│  ├─ @typescript-eslint/scope-manager@5.27.1
+│  ├─ @typescript-eslint/scope-manager@5.28.0
 │  │  └─ URL: https://github.com/typescript-eslint/typescript-eslint.git
-│  ├─ @typescript-eslint/type-utils@5.27.1
+│  ├─ @typescript-eslint/type-utils@5.28.0
 │  │  └─ URL: https://github.com/typescript-eslint/typescript-eslint.git
-│  ├─ @typescript-eslint/types@5.27.1
+│  ├─ @typescript-eslint/types@5.28.0
 │  │  └─ URL: https://github.com/typescript-eslint/typescript-eslint.git
-│  ├─ @typescript-eslint/utils@5.27.1
+│  ├─ @typescript-eslint/utils@5.28.0
 │  │  └─ URL: https://github.com/typescript-eslint/typescript-eslint.git
-│  ├─ @typescript-eslint/visitor-keys@5.27.1
+│  ├─ @typescript-eslint/visitor-keys@5.28.0
 │  │  └─ URL: https://github.com/typescript-eslint/typescript-eslint.git
 │  ├─ @webassemblyjs/ast@1.11.1
 │  │  ├─ URL: https://github.com/xtuc/webassemblyjs.git
@@ -1635,6 +1648,11 @@ yarn licenses v1.22.19
 │  │  └─ URL: https://github.com/babel/babel-polyfills.git
 │  ├─ babel-plugin-polyfill-regenerator@0.3.1
 │  │  └─ URL: https://github.com/babel/babel-polyfills.git
+│  ├─ babel-plugin-styled-components@2.0.7
+│  │  ├─ URL: https://github.com/styled-components/babel-plugin-styled-components.git
+│  │  └─ VendorUrl: https://styled-components.com/docs/tooling#babel-plugin
+│  ├─ babel-plugin-syntax-jsx@6.18.0
+│  │  └─ URL: https://github.com/babel/babel/tree/master/packages/babel-plugin-syntax-jsx
 │  ├─ babel-plugin-transform-react-remove-prop-types@0.4.24
 │  │  ├─ URL: https://github.com/oliviertassinari/babel-plugin-transform-react-remove-prop-types.git
 │  │  └─ VendorName: Nikita Gusakov
@@ -1727,6 +1745,10 @@ yarn licenses v1.22.19
 │  │  ├─ URL: https://github.com/sindresorhus/camelcase.git
 │  │  ├─ VendorName: Sindre Sorhus
 │  │  └─ VendorUrl: https://sindresorhus.com
+│  ├─ camelize@1.0.0
+│  │  ├─ URL: git://github.com/substack/camelize.git
+│  │  ├─ VendorName: James Halliday
+│  │  └─ VendorUrl: https://github.com/substack/camelize
 │  ├─ caniuse-api@3.0.0
 │  │  └─ URL: https://github.com/nyalab/caniuse-api.git
 │  ├─ case-sensitive-paths-webpack-plugin@2.4.0
@@ -1795,7 +1817,7 @@ yarn licenses v1.22.19
 │  ├─ colord@2.9.2
 │  │  ├─ URL: https://github.com/omgovich/colord.git
 │  │  └─ VendorName: Vlad Shilov
-│  ├─ colorette@2.0.17
+│  ├─ colorette@2.0.19
 │  │  ├─ URL: https://github.com/jorgebucaran/colorette.git
 │  │  └─ VendorName: Jorge Bucaran
 │  ├─ combined-stream@1.0.8
@@ -1849,11 +1871,11 @@ yarn licenses v1.22.19
 │  ├─ cookie@0.5.0
 │  │  ├─ URL: https://github.com/jshttp/cookie.git
 │  │  └─ VendorName: Roman Shtylman
-│  ├─ core-js-compat@3.22.8
+│  ├─ core-js-compat@3.23.1
 │  │  └─ URL: https://github.com/zloirock/core-js.git
-│  ├─ core-js-pure@3.22.8
+│  ├─ core-js-pure@3.23.1
 │  │  └─ URL: https://github.com/zloirock/core-js.git
-│  ├─ core-js@3.22.8
+│  ├─ core-js@3.23.1
 │  │  └─ URL: https://github.com/zloirock/core-js.git
 │  ├─ core-util-is@1.0.3
 │  │  ├─ URL: git://github.com/isaacs/core-util-is
@@ -1887,6 +1909,10 @@ yarn licenses v1.22.19
 │  │  ├─ URL: https://github.com/nrkn/css-select-base-adapter.git
 │  │  ├─ VendorName: Nik Coughlin
 │  │  └─ VendorUrl: https://github.com/nrkn/css-select-base-adapter#readme
+│  ├─ css-to-react-native@3.0.0
+│  │  ├─ URL: git+https://github.com/styled-components/css-to-react-native.git
+│  │  ├─ VendorName: Jacob Parker
+│  │  └─ VendorUrl: https://github.com/styled-components/css-to-react-native#readme
 │  ├─ css-tree@1.0.0-alpha.37
 │  │  ├─ URL: https://github.com/csstree/csstree.git
 │  │  ├─ VendorName: Roman Dvornov
@@ -2423,7 +2449,7 @@ yarn licenses v1.22.19
 │  ├─ ignore@5.2.0
 │  │  ├─ URL: git@github.com:kaelzhang/node-ignore.git
 │  │  └─ VendorName: kael
-│  ├─ immer@9.0.14
+│  ├─ immer@9.0.15
 │  │  ├─ URL: https://github.com/immerjs/immer.git
 │  │  ├─ VendorName: Michel Weststrate
 │  │  └─ VendorUrl: https://github.com/immerjs/immer#readme
@@ -3072,9 +3098,8 @@ yarn licenses v1.22.19
 │  ├─ postcss-clamp@4.1.0
 │  │  ├─ URL: https://github.com/polemius/postcss-clamp.git
 │  │  └─ VendorName: Ivan Menshykov
-│  ├─ postcss-color-hex-alpha@8.0.3
+│  ├─ postcss-color-hex-alpha@8.0.4
 │  │  ├─ URL: https://github.com/csstools/postcss-plugins.git
-│  │  ├─ VendorName: Jonathan Neal
 │  │  └─ VendorUrl: https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-hex-alpha#readme
 │  ├─ postcss-colormin@5.3.0
 │  │  ├─ URL: https://github.com/cssnano/cssnano.git
@@ -3087,7 +3112,7 @@ yarn licenses v1.22.19
 │  ├─ postcss-custom-media@8.0.2
 │  │  ├─ URL: https://github.com/csstools/postcss-plugins.git
 │  │  └─ VendorUrl: https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-custom-media#readme
-│  ├─ postcss-custom-properties@12.1.7
+│  ├─ postcss-custom-properties@12.1.8
 │  │  ├─ URL: https://github.com/csstools/postcss-plugins.git
 │  │  ├─ VendorName: Jonathan Neal
 │  │  └─ VendorUrl: https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-custom-properties#readme
@@ -3323,6 +3348,9 @@ yarn licenses v1.22.19
 │  │  └─ VendorUrl: http://jongleberry.com
 │  ├─ react-app-polyfill@3.0.0
 │  │  └─ URL: https://github.com/facebook/create-react-app.git
+│  ├─ react-chrome-extension-router@1.3.1
+│  │  ├─ URL: https://github.com/kelsonpw/react-chrome-extension-router.git
+│  │  └─ VendorName: Kelson Warner
 │  ├─ react-dev-utils@12.0.1
 │  │  └─ URL: https://github.com/facebook/create-react-app.git
 │  ├─ react-dom@18.1.0
@@ -3519,6 +3547,10 @@ yarn licenses v1.22.19
 │  ├─ serve-static@1.15.0
 │  │  ├─ URL: https://github.com/expressjs/serve-static.git
 │  │  └─ VendorName: Douglas Christopher Wilson
+│  ├─ shallowequal@1.1.0
+│  │  ├─ URL: https://github.com/dashed/shallowequal.git
+│  │  ├─ VendorName: Alberto Leal
+│  │  └─ VendorUrl: github.com/dashed
 │  ├─ shebang-command@2.0.0
 │  │  ├─ URL: https://github.com/kevva/shebang-command.git
 │  │  ├─ VendorName: Kevin Mårtensson
@@ -3651,6 +3683,10 @@ yarn licenses v1.22.19
 │  │  ├─ URL: https://github.com/webpack-contrib/style-loader.git
 │  │  ├─ VendorName: Tobias Koppers @sokra
 │  │  └─ VendorUrl: https://github.com/webpack-contrib/style-loader
+│  ├─ styled-components@5.3.5
+│  │  ├─ URL: git+https://github.com/styled-components/styled-components.git
+│  │  ├─ VendorName: Glen Maddern
+│  │  └─ VendorUrl: https://styled-components.com/
 │  ├─ stylehacks@5.1.0
 │  │  ├─ URL: https://github.com/cssnano/cssnano.git
 │  │  ├─ VendorName: Ben Briggs
@@ -3691,7 +3727,7 @@ yarn licenses v1.22.19
 │  │  ├─ URL: https://github.com/jsdom/js-symbol-tree.git
 │  │  ├─ VendorName: Joris van der Wel
 │  │  └─ VendorUrl: https://github.com/jsdom/js-symbol-tree#symbol-tree
-│  ├─ tailwindcss@3.1.0
+│  ├─ tailwindcss@3.1.3
 │  │  ├─ URL: https://github.com/tailwindlabs/tailwindcss.git
 │  │  └─ VendorUrl: https://tailwindcss.com/
 │  ├─ tapable@1.1.3
@@ -4015,4 +4051,4 @@ yarn licenses v1.22.19
    │  └─ URL: https://github.com/streamich/fs-monkey.git
    └─ memfs@3.4.4
       └─ URL: https://github.com/streamich/memfs.git
-Done in 10.48s.
+Done in 12.25s.
