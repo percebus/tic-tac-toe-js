@@ -36,13 +36,15 @@ $> npm start
 
 This will host the app in http://localhost:3000
 
-### Build: `build/`
+## Build: `build/`
 
 ```bash
 $> npm run build
 ```
 
 ## Browser extension
+
+Simply Load the generated `build/` folder from either `chrome` or `edge` `extensions`
 
 ### Routing
 
