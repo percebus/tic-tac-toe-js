@@ -42,7 +42,7 @@ This will host the app in http://localhost:3000
 $> npm run build
 ```
 
-## Browser extension
+## `chrome-extension`
 
 Simply Load the generated `build/` folder from either `chrome` or `edge` `extensions`
 
@@ -59,3 +59,9 @@ We were able to make this application a browser extension by simply including a 
 This file also got included, and its meant to be vanilla JS that gets executed.
 
 Ideally, we would also compile this as any other modern application.
+
+### Browsers
+
+#### `chrome`
+
+![chrome-extension](./README/chrome/popup.png)
