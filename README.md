@@ -2,6 +2,14 @@
 
 Followed the ["Tutorial: Intro to React"](https://reactjs.org/tutorial/tutorial.html) tutorial to make this application
 
+## History
+
+See [HISTORY](./HISTORY.md)
+
+## 'To-Do's
+
+See [TODO](./TODO.md)s
+
 ## Setup
 
 ### First time
