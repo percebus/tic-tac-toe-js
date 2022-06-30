@@ -5,15 +5,16 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "react": "^18.1.0",
+    "react-chrome-extension-router": "^1.3.1",
     "react-dom": "^18.1.0",
     "react-lodash": "^0.1.2",
     "react-scripts": "5.0.1",
+    "standard": "^17.0.0",
     "styled-components": "^5.3.5",
-    "react-chrome-extension-router": "^1.3.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "npm:install:global": "npm install -g yarn standard serve",
+    "npm:install:global": "npm install -g yarn serve",
     "setup": "npm run npm:install:global",
     "yarn:licenses:list:prod": "yarn licenses list --prod > public/LICENSES.txt",
     "yarn:licenses:generate-disclaimer:prod": "yarn licenses generate-disclaimer --prod > public/LICENSES.md",
@@ -25,14 +26,13 @@
     "react:test": "react-scripts test",
     "react:start": "react-scripts start",
     "react:build": "react-scripts build",
-    "react:eject": "react-scripts eject",
+    "_react:eject": "react-scripts eject",
     "prestart": "npm run lint",
     "start": "npm run react:start",
-    "prebuild": "npm run lint",
-    "build": "npm run LICENSES && npm run react:build",
+    "prebuild": "npm run LICENSES && npm run lint",
+    "build": "npm run react:build",
     "serve:build": "serve -s build",
-    "test": "npm run react:test",
-    "eject": "npm run react:eject"
+    "test": "npm run react:test"
   },
   "standard": {
     "global": [
