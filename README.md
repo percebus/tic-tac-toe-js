@@ -46,19 +46,21 @@ $> npm run build
 
 Simply Load the generated `build/` folder from either `chrome` or `edge` `extensions`
 
-### Routing
-
-Since we were not able to use [`react-router(-dom)`](https://github.com/remix-run/react-router), React's defacto's routing library; we had to resort to [`react-chrome-extension-router`](https://github.com/kelsonpw/react-chrome-extension-router).
-
 ### `manifest.json`
 
 We were able to make this application a browser extension by simply including a `manifest.json` file inside `public/` folder. NOTE: since there was already a `manifest.json` there, this later was renamed as `manifest.react.json`. Moreover, there were attempts of merging the 2 of them, but the `chrome-extension` spec (`"manifest_version": 3`) seems to differ from the one react uses (`v2` perhaps?)
 
 ### `chrome/background/service_worker.js`
 
-This file also got included, and its meant to be vanilla JS that gets executed.
+This file also gets included from `public/` folder as a static file, and its meant to be vanilla JS that gets executed as a background service.
 
 Ideally, we would also compile this as any other modern application.
+
+See [TODO](./TODO.md)s for more information
+
+### React Routing
+
+Since we were not able to use [`react-router(-dom)`](https://github.com/remix-run/react-router), React's defacto's routing library; we had to resort to [`react-chrome-extension-router`](https://github.com/kelsonpw/react-chrome-extension-router).
 
 ### Browsers
 
