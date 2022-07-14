@@ -10,7 +10,7 @@ Names considered
  - `react-tutorial-jsx-app`
  - `react-tutorials-jsx-app`
  - `hello-react-tic-tac-toe-jsx-app`
- - `react-tic-tac-toe-tutorial-jsx-app`
+ - `react-tic-tac-toe-tutorial-jsx-app` << Liking this one
  - `react-tic-tac-toe-tutorials-jsx-app`
  - `react-tic-tac-toe-sample-jsx-app`
  - `react-tic-tac-toe-example-jsx-app`

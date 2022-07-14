@@ -1,5 +1,7 @@
 # `react-tic-tac-toe-jsx-app`
 
+[![Continuous Integration](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/actions.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/actions.yml)
+
 Followed the ["Tutorial: Intro to React"](https://reactjs.org/tutorial/tutorial.html) tutorial to make this application
 
 ## History
@@ -58,10 +60,6 @@ $> npm start
 
 ## `electron`
 
-### Windows
-
-![`win32`](./README/electron/win32.png)
-
 ### Run
 
 ```bash
@@ -81,6 +79,13 @@ $> npm run electron:forge:package
 ```bash
 $> npm run electron:forge:make
 ```
+
+### OS
+
+#### Windows
+
+![`win32`](./README/electron/win32.png)
+
 
 #### Run
 
