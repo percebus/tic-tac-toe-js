@@ -36,7 +36,7 @@
     "_react:eject": "react-scripts eject",
     "preelectron": "npm run build",
     "electron": "electron .",
-    "preelectron-forge": "npm run build",
+    "preelectron:forge": "npm run build",
     "electron:forge": "electron-forge",
     "electron:forge:start": "npm run electron:forge -- start",
     "electron:forge:package": "npm run electron:forge -- package",
@@ -47,6 +47,8 @@
     "serve": "serve -s build",
     "start": "npm run react:start",
     "desktop": "npm run electron:forge:start",
+    "package": "npm run electron:forge:package",
+    "make": "npm run electron:forge:make",
     "out": "npm run electron:forge:make"
   },
   "standard": {
