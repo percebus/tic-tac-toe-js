@@ -38,12 +38,11 @@ jobs:
           name: build
           path: build
 
-  matrix:
-    build:
-      max-parallel: 4
-      matrix:
-        os: [ubuntu-latest, macOS-latest, windows-latest]
-        node: [16, 18]
+  build matrix:
+    max-parallel: 4
+    matrix:
+      os: [ubuntu-latest, macOS-latest, windows-latest]
+      node: [16, 18]
     runs-on: ${{ matrix.os }}
     name: node:${{ matrix.node }}@${{ matrix.os }}
     steps:
