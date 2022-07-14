@@ -1,4 +1,4 @@
-name: main
+name: electron
 on:
   push:
     branches: [ main, master ]
@@ -8,29 +8,6 @@ on:
     - cron: '* 0 * * *'
 
 jobs:
-
-  npm audit:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout
-        uses: actions/checkout@v3
-      - name: setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - name: ls
-        run: ls
-
-      - name: setup
-        run: npm run setup:ci --if-present
-      - name: npm install
-        run: npm ci
-
-      - name: npm audit
-        run: npm audit
-        continue-on-error: true # XXX?
-
-
   electron: # FIXME? takes 8min+
     runs-on: ubuntu-latest
     steps:
@@ -39,7 +16,7 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: '16.X'
       - name: ls
         run: ls
 

@@ -14,7 +14,7 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: '16.15.X'
       - name: ls
         run: ls
 
@@ -43,7 +43,7 @@ jobs:
       max-parallel: 6
       matrix:
         os: [ubuntu-latest, macOS-latest, windows-latest]
-        node: [16, 18]
+        node: ['16.X', '18.X']
     runs-on: ${{ matrix.os }}
     name: build @ node:${{ matrix.node }}@${{ matrix.os }}
     steps:
@@ -61,10 +61,3 @@ jobs:
 
       - name: react build
         run: npm run build
-      
-      - name: electron-forge package
-        run: npx electron-forge package
-
-      # TODO? takes 8min, too long!
-#     - name: electron-forge make
-#       run: npx electron-forge make
