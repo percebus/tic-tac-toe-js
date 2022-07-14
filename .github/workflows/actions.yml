@@ -41,6 +41,7 @@ jobs:
 
 
   builds:
+    needs: build
     strategy:
       max-parallel: 4
       matrix:
