@@ -1,5 +1,5 @@
 {
-  "name": "tic-tac-toe-js",
+  "name": "react-tic-tac-toe-jsx-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,25 +14,27 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "npm:install:global": "npm install -g yarn serve",
+    "npm:install:global": "npm install --location=global yarn serve",
     "setup": "npm run npm:install:global",
-    "yarn:licenses:list:prod": "yarn licenses list --prod > public/LICENSES.txt",
-    "yarn:licenses:generate-disclaimer:prod": "yarn licenses generate-disclaimer --prod > public/LICENSES.md",
+    "setup:ci": "npm run setup",
+    "yarn:licenses:list:prod": "yarn licenses list --prod > build/LICENSES.txt",
+    "yarn:licenses:generate-disclaimer:prod": "yarn licenses generate-disclaimer --prod > build/LICENSES.md",
     "yarn:licenses:prod": "npm run yarn:licenses:list:prod && npm run yarn:licenses:generate-disclaimer:prod",
     "LICENSES": "npm run yarn:licenses:prod",
     "standard": "standard --fix src/**/*.js* public/**/*.js",
     "lint:js": "npm run standard",
     "lint": "npm run lint:js",
-    "react:test": "react-scripts test",
-    "react:start": "react-scripts start",
-    "react:build": "react-scripts build",
+    "prereact": "npm run lint",
+    "react": "react-scripts",
+    "react:test": "npm run react -- test",
+    "react:start": "npm run react -- start",
+    "react:build": "npm run react -- build",
     "_react:eject": "react-scripts eject",
-    "prestart": "npm run lint",
-    "start": "npm run react:start",
-    "prebuild": "npm run LICENSES && npm run lint",
+    "test": "npm run react:test",
     "build": "npm run react:build",
-    "serve:build": "serve -s build",
-    "test": "npm run react:test"
+    "postbuild": "npm run LICENSES",
+    "serve": "serve -s build",
+    "start": "npm run react:start"
   },
   "standard": {
     "global": [
