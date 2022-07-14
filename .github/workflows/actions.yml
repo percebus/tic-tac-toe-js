@@ -22,11 +22,6 @@ jobs:
         run: npm run setup:ci --if-present
       - name: npm install
         run: npm ci
-      - name: node_modules.zip
-        uses: actions/upload-artifact@v3
-        with:
-          name: node_modules
-          path: node_modules
 
       - name: lint
         run: npm run lint
@@ -57,17 +52,10 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
-      - name: node_modules.zip
-        uses: actions/download-artifact@v3
-        with:
-          name: node_modules
-          path: node_modules
       - name: setup
         run: npm run setup:ci --if-present
-#     - name: npm install
-#       run: npm install
-      - name: ls
-        run: ls
+      - name: npm install
+        run: npm install
 
       - name: build
         run: npm run build
@@ -84,15 +72,10 @@ jobs:
         with:
           node-version: 16
 
-      - name: node_modules.zip
-        uses: actions/download-artifact@v3
-        with:
-          name: node_modules
-          path: node_modules
       - name: setup
         run: npm run setup:ci --if-present
-#     - name: npm install
-#       run: npm install
+      - name: npm install
+        run: npm install
 
       - name: build.zip
         uses: actions/download-artifact@v3
