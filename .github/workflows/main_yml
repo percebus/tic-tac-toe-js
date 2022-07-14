@@ -1,4 +1,4 @@
-name: Main
+name: main
 on:
   push:
     branches: [ main, master ]
@@ -8,21 +8,15 @@ on:
     - cron: '* 0 * * *'
 
 jobs:
-  audit:
-    strategy:
-      max-parallel: 6
-      matrix:
-        os: [ubuntu-latest]
-        node: [16]
-    runs-on: ${{ matrix.os }}
-    name: node:${{ matrix.node }}@${{ matrix.os }}
+  npm audit:
+    runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v3
       - name: setup node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node }}
+          node-version: 16
       - name: ls
         run: ls
       - name: setup

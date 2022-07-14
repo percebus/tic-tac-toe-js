@@ -5,27 +5,27 @@ on:
     - cron: '* 0 * * *'
 
 jobs:
-  react:
-    strategy:
-      max-parallel: 6
-      matrix:
-        os: [ubuntu-latest, macOS-latest, windows-latest]
-        node: [16, 18]
-    runs-on: ${{ matrix.os }}
-    name: node:${{ matrix.node }}@${{ matrix.os }}
+  build:
+    runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v3
       - name: setup node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node }}
+          node-version: 16
       - name: ls
         run: ls
+
       - name: setup
         run: npm run setup:ci --if-present
       - name: npm install
         run: npm ci
+      - name: node_modules.zip
+        uses: actions/upload-artifact@v3
+        with:
+          name: node_modules
+          path: node_modules
 
       - name: lint
         run: npm run lint
@@ -38,8 +38,39 @@ jobs:
           name: build
           path: build
 
+  matrix:
+    build:
+      max-parallel: 4
+      matrix:
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+        node: [16, 18]
+    runs-on: ${{ matrix.os }}
+    name: node:${{ matrix.node }}@${{ matrix.os }}
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: node_modules.zip
+        uses: actions/download-artifact@v3
+        with:
+          name: node_modules
+          path: node_modules
+      - name: setup
+        run: npm run setup:ci --if-present
+#     - name: npm install
+#       run: npm install
+      - name: ls
+        run: ls
+
+     - name: build
+        run: npm run build
+
   electron:
-    needs: react
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -48,18 +79,26 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: ls
-        run: ls
+
+      - name: node_modules.zip
+        uses: actions/download-artifact@v3
+        with:
+          name: node_modules
+          path: node_modules
       - name: setup
         run: npm run setup:ci --if-present
-      - name: npm install
-        run: npm ci
+#     - name: npm install
+#       run: npm install
+      - name: ls
+        run: ls
 
       - name: build.zip
         uses: actions/download-artifact@v3
         with:
           name: build
           path: build
+      - name: ls
+        run: ls
 
       - name: electron-forge package
         run: npx electron-forge package
