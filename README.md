@@ -26,6 +26,20 @@ It mainly installs global dependencies
 $> npm install
 ```
 
+## Build
+
+### `build/`
+
+```bash
+$> npm run build
+```
+
+### `out/`
+
+```bash
+$> npm run out
+```
+
 ## Development
 
 ### Test
@@ -36,19 +50,45 @@ $> npm install
 $> npm test
 ```
 
-### R&D
+### Run
 
 ```bash
 $> npm start
 ```
 
-This will host the app in http://localhost:3000
+## `electron`
 
-## Build: `build/`
+### Windows
+
+![`win32`](./README/electron/win32.png)
+
+### Run
 
 ```bash
-$> npm run build
+$> npm run electron
 ```
+
+### `forge`
+
+#### Package
+
+```bash
+$> npm run electron:forge:package
+```
+
+#### Make
+
+```bash
+$> npm run electron:forge:make
+```
+
+#### Run
+
+```bash
+$> npm run electron:forge:start
+```
+
+This will host the app in http://localhost:3000
 
 ## `chrome-extension`
 

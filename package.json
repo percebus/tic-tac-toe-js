@@ -2,7 +2,11 @@
   "name": "react-tic-tac-toe-jsx-app",
   "version": "0.1.0",
   "private": true,
+  "main": "build/main.js",
+  "description": "ReactJS tic-tac-toe tutorial JSX app",
+  "homepage": "./",
   "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
     "lodash": "^4.17.21",
     "react": "^18.1.0",
     "react-chrome-extension-router": "^1.3.1",
@@ -21,7 +25,7 @@
     "yarn:licenses:generate-disclaimer:prod": "yarn licenses generate-disclaimer --prod > build/LICENSES.md",
     "yarn:licenses:prod": "npm run yarn:licenses:list:prod && npm run yarn:licenses:generate-disclaimer:prod",
     "LICENSES": "npm run yarn:licenses:prod",
-    "standard": "standard --fix src/**/*.js* public/**/*.js",
+    "standard": "standard --fix src/**/*.jsx public/**/*.js",
     "lint:js": "npm run standard",
     "lint": "npm run lint:js",
     "prereact": "npm run lint",
@@ -30,11 +34,20 @@
     "react:start": "npm run react -- start",
     "react:build": "npm run react -- build",
     "_react:eject": "react-scripts eject",
+    "preelectron": "npm run build",
+    "electron": "electron .",
+    "preelectron-forge": "npm run build",
+    "electron:forge": "electron-forge",
+    "electron:forge:start": "npm run electron:forge -- start",
+    "electron:forge:package": "npm run electron:forge -- package",
+    "electron:forge:make": "npm run electron:forge -- make",
     "test": "npm run react:test",
     "build": "npm run react:build",
     "postbuild": "npm run LICENSES",
     "serve": "serve -s build",
-    "start": "npm run react:start"
+    "start": "npm run react:start",
+    "desktop": "npm run electron:forge:start",
+    "out": "npm run electron:forge:make"
   },
   "standard": {
     "global": [
@@ -60,9 +73,44 @@
       "last 1 safari version"
     ]
   },
+  "author": "percebus",
+  "license": "SEE LICENSE IN LICENSE.md",
   "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.64",
+    "@electron-forge/maker-deb": "^6.0.0-beta.64",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.64",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.64",
+    "@electron-forge/maker-zip": "^6.0.0-beta.64",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^14.2.0"
+    "@testing-library/user-event": "^14.2.0",
+    "electron": "^19.0.8"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "react_tic_tac_toe_jsx_app"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
   }
 }
