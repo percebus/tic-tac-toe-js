@@ -5,6 +5,7 @@ on:
     - cron: '* 0 * * *'
 
 jobs:
+
   build:
     runs-on: ubuntu-latest
     steps:
@@ -38,11 +39,13 @@ jobs:
           name: build
           path: build
 
-  build_matrix:
-    max-parallel: 4
-    matrix:
-      os: [ubuntu-latest, macOS-latest, windows-latest]
-      node: [16, 18]
+
+  builds:
+    strategy:
+      max-parallel: 4
+      matrix:
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+        node: [16, 18]
     runs-on: ${{ matrix.os }}
     name: node:${{ matrix.node }}@${{ matrix.os }}
     steps:
@@ -65,8 +68,9 @@ jobs:
       - name: ls
         run: ls
 
-     - name: build
+      - name: build
         run: npm run build
+
 
   electron:
     needs: build
@@ -88,8 +92,6 @@ jobs:
         run: npm run setup:ci --if-present
 #     - name: npm install
 #       run: npm install
-      - name: ls
-        run: ls
 
       - name: build.zip
         uses: actions/download-artifact@v3
