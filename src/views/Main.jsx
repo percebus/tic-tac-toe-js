@@ -1,4 +1,4 @@
-import Game from '../components/game/Game'
+import Game from '../components_/game_/Game'
 import { Link, goBack } from 'react-chrome-extension-router'
 
 function Main (props) {
