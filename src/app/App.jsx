@@ -1,11 +1,11 @@
 import React from 'react'
-import PopUp from './pages/PopUp'
+import Intro from '../views/intro/Intro'
 import { Router } from 'react-chrome-extension-router'
 
 function App () {
   return (
     <Router>
-      <PopUp />
+      <Intro />
     </Router>
   )
 }

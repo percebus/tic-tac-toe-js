@@ -19,3 +19,9 @@ Names considered
 ## Chrome Extension
 
  - [ ] Transpile `public/chrome/background/service_worker.js` from a modern JS app.
+
+## App
+
+ - [ ] Input number of tiles before starting the game
+ - [ ] Declare a winner
+ 
