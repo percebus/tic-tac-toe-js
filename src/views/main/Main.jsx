@@ -9,7 +9,7 @@ function Main (props) {
       <Game />
       <footer>
         <div>
-          <span>{ msg }</span>:&nbsp;
+          <span>{msg}</span>:&nbsp;
           <Link onClick={goBack}>
             Go Back
           </Link>
