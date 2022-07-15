@@ -1,4 +1,4 @@
-import Main from '../main/Main'
+import Main from '../Main'
 import { Link } from 'react-chrome-extension-router'
 
 function Intro () {

@@ -1,5 +1,5 @@
 import React from 'react'
-import Intro from '../pages/intro/Intro'
+import Intro from '../pages/Intro'
 import { Router } from 'react-chrome-extension-router'
 
 function App () {
@@ -8,6 +8,4 @@ function App () {
       <Intro />
     </Router>
   )
-}
-
-export default App
+} export default App
