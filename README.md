@@ -1,6 +1,6 @@
 # `react-tic-tac-toe-jsx-app`
 
-[![Continuous Integration](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/actions.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/actions.yml) [![electron](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/electron.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/electron.yml)
+[![Continuous Integration](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/verify.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/verify.yml) [![electron](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/electron.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/electron.yml)
 
 Followed the ["Tutorial: Intro to React"](https://reactjs.org/tutorial/tutorial.html) tutorial to make this application
 
@@ -42,7 +42,7 @@ $> npm test
 
 #### `build/`
 
-[![Continuous Integration](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/actions.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/actions.yml)
+[![Continuous Integration](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/verify.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/verify.yml)
 
 ```bash
 $> npm run build
