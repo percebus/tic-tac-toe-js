@@ -1,6 +1,6 @@
 # `react-tic-tac-toe-jsx-app`
 
-[![Continuous Integration](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/actions.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/actions.yml)
+[![Continuous Integration](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/actions.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/actions.yml) [![electron](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/electron.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/electron.yml)
 
 Followed the ["Tutorial: Intro to React"](https://reactjs.org/tutorial/tutorial.html) tutorial to make this application
 
@@ -28,21 +28,7 @@ It mainly installs global dependencies
 $> npm install
 ```
 
-## Build
-
-### `build/`
-
-```bash
-$> npm run build
-```
-
-### `out/`
-
-```bash
-$> npm run out
-```
-
-## Development
+## R&D
 
 ### Test
 
@@ -50,6 +36,22 @@ $> npm run out
 
 ```bash
 $> npm test
+```
+
+### Build
+
+#### `build/`
+
+[![Continuous Integration](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/actions.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/actions.yml)
+
+```bash
+$> npm run build
+```
+
+#### `out/`
+
+```bash
+$> npm run out
 ```
 
 ### Run
@@ -67,6 +69,8 @@ $> npm run electron
 ```
 
 ### `forge`
+
+[![electron](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/electron.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/electron.yml)
 
 #### Package
 
