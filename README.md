@@ -1,8 +1,6 @@
 # `react-tic-tac-toe-jsx-app`
 
-[![verify](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/verify.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/verify.yml)
-
-[![dependency review](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/dependency-review.yml)
+[![verify](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/verify.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/verify.yml) [![dependency review](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/dependency-review.yml)
 
 
 ## History
