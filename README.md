@@ -1,6 +1,6 @@
 # `react-tic-tac-toe-jsx-app`
 
-[![Continuous Integration](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/verify.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/verify.yml)
+[![Continuous Integration](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/always.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/always.yml)
 
 [![pull request](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/pull_request.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/pull_request.yml)
 
@@ -27,11 +27,16 @@ It mainly installs global dependencies
 
 ### Dependencies
 
+[![pull request](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/pull_request.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/pull_request.yml)
+
+
 ```bash
 $> npm install
 ```
 
 ## R&D
+
+[![Continuous Integration](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/always.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/always.yml)
 
 ### Test
 
@@ -44,8 +49,6 @@ $> npm test
 ### Build
 
 #### `build/`
-
-[![Continuous Integration](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/verify.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/verify.yml)
 
 ```bash
 $> npm run build
