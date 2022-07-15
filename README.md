@@ -1,10 +1,13 @@
 # `react-tic-tac-toe-jsx-app`
 
-[![Continuous Integration](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/verify.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/verify.yml) [![electron](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/electron.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/electron.yml)
+[![Continuous Integration](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/verify.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/verify.yml)
 
-Followed the ["Tutorial: Intro to React"](https://reactjs.org/tutorial/tutorial.html) tutorial to make this application
+[![pull request](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/pull_request.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/pull_request.yml)
+
 
 ## History
+
+Followed the ["Tutorial: Intro to React"](https://reactjs.org/tutorial/tutorial.html) tutorial to make this application
 
 See [HISTORY](./HISTORY.md)
 
@@ -71,8 +74,6 @@ $> npm run electron
 ```
 
 ### `forge`
-
-[![electron](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/electron.yml/badge.svg)](https://github.com/percebus/react-tic-tac-toe-jsx-app/actions/workflows/electron.yml)
 
 #### Package
 
