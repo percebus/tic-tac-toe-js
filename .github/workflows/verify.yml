@@ -21,6 +21,8 @@ jobs:
         run: npm run setup:ci --if-present
       - name: npm install
         run: npm ci
+      - name: node_modules
+        run: ls -la ./node_modules
       - name: npm audit
         run: npm audit
         continue-on-error: true # XXX?
@@ -37,7 +39,7 @@ jobs:
           path: build
 
       - name: electron-forge package
-        run: npx electron-forge package      
+        run: npx electron-forge package
 
 
   builds:
@@ -69,24 +71,30 @@ jobs:
 
   electron: # FIXME? takes 8min+
     if: github.ref == 'refs/heads/main'
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v3
+
       - name: setup node
         uses: actions/setup-node@v3
         with:
-          node-version: '16.X'
-      - name: ls
-        run: ls
-
+          node-version: 16
       - name: setup
         run: npm run setup:ci --if-present
       - name: npm install
         run: npm install
+      - name: build.zip
+        uses: actions/download-artifact@v3
+        with:
+          name: build
+          path: build
+      - name: ls
+        run: ls -la
 
       - name: electron-forge make
-        run: npm run make
+        run: npx electron-forge make
 # FIXME
 #     - name: out.zip
 #       uses: actions/upload-artifact@v3
