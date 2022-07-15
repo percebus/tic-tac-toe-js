@@ -1,7 +1,7 @@
 import React from 'react'
 import _ from 'lodash'
 import { Map } from 'react-lodash'
-import Square from './square_/Square'
+import Square from './square/Square'
 import './board.css'
 
 let storage = null
