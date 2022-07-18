@@ -6,7 +6,7 @@
   const { app, BrowserWindow } = require('electron')
   const path = require('path')
 
-  const newBrowserWindow = () => {
+  function newBrowserWindow () {
     console.log('newBrowserWindow()')
 
     const oBrowserWindow = new BrowserWindow({
@@ -17,7 +17,7 @@
       }
     })
 
-    const htmlPlatformPath = path.join(__dirname, 'index.html')
+    const htmlPlatformPath = path.join(__dirname, '../index.html')
     oBrowserWindow.loadFile(htmlPlatformPath)
 
     // Open the DevTools.
