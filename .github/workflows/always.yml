@@ -1,5 +1,5 @@
 name: Verification
-on: 
+on:
   push:
   schedule:
     - cron: '0 0 * * *'
@@ -17,7 +17,7 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v3
         with:
-          node-version: '16.15.X'
+          node-version: '16.X'
       - name: setup
         run: npm run setup:ci --if-present
       - name: npm install
@@ -49,8 +49,11 @@ jobs:
     strategy:
       max-parallel: 6
       matrix:
-        os: [ubuntu-latest, macOS-latest, windows-latest]
         node: [16, 18]
+        os:
+          - ubuntu-latest
+#         - macOS-latest # FIXME
+          - windows-latest
     runs-on: ${{ matrix.os }}
     name: Build @ node:${{ matrix.node }}@${{ matrix.os }}
     steps:
